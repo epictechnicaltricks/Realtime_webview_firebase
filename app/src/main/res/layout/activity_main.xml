@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_webView"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/img_desc_icon_splashscreen"
+        android:elevation="0dp"
+        android:scaleType="center"
+        android:src="@drawable/img_icon_splash" />
+
+    <ProgressBar
+        android:visibility="visible"
+        android:id="@+id/pb_webLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <WebView
+            android:id="@+id/wv_nyoloWeb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="gone" />
+
+        <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:alpha="0.03"
+                android:id="@+id/home_"
+                android:textColor="#000"
+                android:text="home"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="20dp"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:alpha="0.03"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/exit_"
+                android:textColor="#000"
+                android:text="exit"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:singleLine="true"
+
+                android:textColor="#000"
+                android:hint="http://example.com"
+                android:textColorHint="#C3BDDC"
+                android:id="@+id/url_"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="10dp"
+                android:background="#fff"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content">
+
+
+            </EditText>
+
+            <TextView
+                android:background="#fff"
+                android:alpha="1"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="30dp"
+                android:id="@+id/upload_"
+                android:textColor="#000"
+                android:text="UPLOAD"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Demo</string>
+
+
+    <!--  Permission Message  -->
+    <string name="permission_message_denied_camera">"This app needs access to your camera so you can take pictures."</string>
+
+    <!--  General Message  -->
+    <string name="alert_quit_title">Exit ?</string>
+    <string name="alert_quit_message">Want to exit this app?</string>
+    <string name="text_yes">Yes</string>
+    <string name="text_no">No</string>
+
+
+    <!--  Description of ImageView  -->
+    <string name="img_desc_icon_splashscreen">Icon of Apps</string>
+</resources>
